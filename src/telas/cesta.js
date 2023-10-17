@@ -42,11 +42,13 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         lineHeight: 42,
         color: "#464646",
+        fontFamily: "MontserratBold",
     },
     nomeFazenda:{
         fontSize: 16,
         lineHeight: 26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily: "MontserratRegular"
     },
     cesta:{
         paddingVertical: 8,
