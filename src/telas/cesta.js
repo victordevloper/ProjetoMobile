@@ -9,16 +9,16 @@ const width = Dimensions.get('screen').width;
 export default function Cesta(){
     return <>
         <Image style={estilos.topo} source={topo}/>
-        <Text style={estilos.titulo}>Detalhes da Cesta</Text>
+        <Texto style={estilos.titulo}>Detalhes da Cesta</Texto>
         
         <View style={estilos.cesta}>
-            <Text style={estilos.nome}>Cesta De Verduras</Text>
+            <Texto style={estilos.nome}>Cesta De Verduras</Texto>
             <View style={estilos.fazenda}>
                 <Image style={estilos.imagemFazenda} source={logo}></Image>
-                <Text style={estilos.nomeFazenda}>Fazenda Jack Farm</Text>
+                <Texto style={estilos.nomeFazenda}>Fazenda Jack Farm</Texto>
             </View>
             <Texto style={estilos.descricao}> uma cesta com produtos selecionados cuidadosamente da Fazenda diretamente para a cozinha</Texto>
-            <Text style={estilos.preco}>R$ 40,00</Text>
+            <Texto style={estilos.preco}>R$ 40,00</Texto>
         </View>
     </>
 }
@@ -43,13 +43,11 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         lineHeight: 42,
         color: "#464646",
-        fontFamily: "MontserratBold",
     },
     nomeFazenda:{
         fontSize: 16,
         lineHeight: 26,
         marginLeft: 12,
-        fontFamily: "MontserratRegular"
     },
     cesta:{
         paddingVertical: 8,
