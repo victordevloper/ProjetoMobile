@@ -1,6 +1,6 @@
 import { SafeAreaView ,StatusBar ,StyleSheet, Text, View } from 'react-native';
 import { useFonts, Montserrat_400Regular, Montserrat_700Bold } from "@expo-google-fonts/montserrat"
-import Cesta from './src/telas/cesta';
+import Cesta from './src/telas/componentes/cesta';
 
 export default function App() {
 

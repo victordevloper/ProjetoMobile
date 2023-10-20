@@ -1,13 +1,14 @@
 import React from "react";
 import { Image, Dimensions, StyleSheet, Text, View } from "react-native";
-import Texto from "../componentes/texto";
-import topo from '../../assets/topo.png';
+import Texto from "../../componentes/texto";
+import topo from '../assets/topo'
 import logo from '../../assets/logo.png';
 
 const width = Dimensions.get('screen').width;
 
 export default function Cesta(){
     return <>
+        <Topo/>
         <Image style={estilos.topo} source={topo}/>
         <Texto style={estilos.titulo}>Detalhes da Cesta</Texto>
         
@@ -24,20 +25,6 @@ export default function Cesta(){
 }
 
 const estilos = StyleSheet.create({
-    topo:{
-        width: "100%",
-        height: 375 / 667 * width,
-    },
-    titulo:{
-        width: "100%",
-        position: "absolute",
-        textAlign: "center",
-        fontSize: 16,
-        lineHeight: 16,
-        color: "white",
-        fontWeight: "bold",
-        padding: 16
-    },
     nome:{
         fontSize: 26,
         fontWeight: "bold",
